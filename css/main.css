@@ -1,4 +1,144 @@
+:root {
+  --main-text-color: #757575;
+  --main-batton-address-color: #ffffff;
+  --accent-color: #2196f3;
+  --portfolio-main-color: #212121;
+  --webstudio-text-color: #000000;
+  --background-text-button-color: #f5f4fa;
+  --footer-main-background-color: #2f303a;
+  --var-main-color: #e5e5e5;
+}
+
+.checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.img-occupation {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
-  background-color: teal;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  background-color: var(--main-batton-address-color);
+}
+
+footer {
+  background-color: var(--footer-main-background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-image {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.button-style {
+  display: inline-block;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  color: var(--main-batton-address-color);
+  text-align: center;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-style:hover,
+.button-style:focus {
+  background-color: #188ce8;
+}
+
+.webstudio {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--webstudio-text-color);
+  margin-top: 24px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.web {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-menu {
+  display: inline-block;
+}
+
+.studio-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-batton-address-color);
+  text-decoration: none;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
