@@ -10,6 +10,10 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 .clients-item:last-child {
   margin-right: 0px;
@@ -18,10 +22,6 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-item:hover,
-.clients-item:focus {
-  border-color: var(--accent-color);
 }
 .clients-item:hover .icon-clients,
 .clients-item:focus .icon-clients {

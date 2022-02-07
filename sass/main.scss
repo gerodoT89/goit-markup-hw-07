@@ -1,24 +1,24 @@
 @import "./utlis/variable";
-@import "./utlis/checkbox";
-
 @import "./base/reset";
+@import "./utlis/checkbox";
 @import "./base/common";
 @import "./base/portfolio-list";
 
+//---------Components -------//
 @import "./components/container";
-@import "./components/button-style";
 @import "./components/logo";
-@import "./components/modal";
 @import "./components/section-title";
 @import "./components/material-section";
+@import "./components/button-style";
 @import "./components/team-social-link";
-
+@import "./components/modal";
+//-----------layot----------//
+@import "./layout/portfolio-buttons.scss";
+@import "./layout/header";
+@import "./layout/about-main.scss";
+@import "./layout/hero-sections";
 @import "./layout/team";
+@import "./layout/occupation-section";
 @import "./layout/clients-section";
 @import "./layout/portfolio-item";
 @import "./layout/footer";
-@import "./layout/hero-sections";
-@import "./layout/header";
-@import "./layout/portfolio-buttons.scss";
-@import "./layout/occupation-section";
-@import "./layout/main-case";

@@ -17,7 +17,10 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &:hover,:focus {
+  background-color: #2196f3;
+  }
+  }
 .team-social-icons {
   fill: #afb1b8;
   content: "";
@@ -28,10 +31,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: #2196f3;
-}
+
 .team-social-link:hover .team-social-icons,
 .team-social-link:focus .team-social-icons {
   fill: #ffffff;

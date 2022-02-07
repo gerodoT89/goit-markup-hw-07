@@ -27,14 +27,14 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    background-color: #188ce8;
+    color: var(--main-batton-address-color);
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 .button-list-item .button-setting:last-child {
   margin-right: 0px;
-}
-.main-name-section:hover,
-.main-name-section:focus {
-  background-color: #188ce8;
-  color: var(--main-batton-address-color);
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

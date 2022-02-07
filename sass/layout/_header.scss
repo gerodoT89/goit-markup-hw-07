@@ -18,6 +18,10 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    color: var(--accent-color);
+  }
 }
 .portfolio-text-color {
   color: var(--accent-color);
@@ -25,37 +29,36 @@
 .current {
   color: var(--accent-color);
   position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    background-color: var(--accent-color);
+    bottom: -30px;
+  }
 }
-.current::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  background-color: var(--accent-color);
-  bottom: -30px;
-}
+
 .current-portfolio {
   position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    background-color: var(--accent-color);
+    bottom: -34px;
+  }
 }
-.current-portfolio::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  background-color: var(--accent-color);
-  bottom: -34px;
-}
+
 .border-header {
   border-bottom: 1px solid #ececec;
 }
-.social-link:hover,
-.social-link:focus {
-  color: var(--accent-color);
-}
+
 .header-contacts:hover,
 .header-contacts:focus {
   fill: var(--accent-color);
@@ -101,8 +104,7 @@
 .header-mail-contacts .header-contacts:not(:last-child) {
   margin-right: 50px;
 }
-.header-contacts,
-.header-tell {
+.header-contacts {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -111,6 +113,11 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 .tell-svg {
   margin-right: 10px;

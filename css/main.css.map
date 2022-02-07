@@ -22,7 +22,8 @@
         "../sass/layout/_hero-sections.scss",
         "../sass/layout/_header.scss",
         "../sass/layout/portfolio-buttons.scss",
-        "../sass/layout/_occupation-section.scss"
+        "../sass/layout/_occupation-section.scss",
+        "../sass/layout/_main.scss"
     ],
     "names": [],
     "file": "main.css"
