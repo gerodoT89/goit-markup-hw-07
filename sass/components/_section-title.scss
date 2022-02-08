@@ -1,13 +1,4 @@
-.section-clients-title {
-  font-family: Roboto;
-  @include font(36px, 700, 1.16, 0.03em);
-  font-style: normal;
-  color: var(--portfolio-main-color);
-  text-decoration: none;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.section-title {
+.section__title {
   @include font(36px, 700, 1.16, 0.03em);
   text-align: center;
   color: var(--portfolio-main-color);

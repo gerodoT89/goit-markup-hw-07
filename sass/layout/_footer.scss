@@ -1,22 +1,22 @@
-.footer-paddings {
+.footer {
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
-.footer-section-li:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.addres--footer-margin {
+.addres__footer-margin {
   margin-top: 20px;
 }
 .footer-li-addres-section {
   margin-bottom: 9px;
 }
-.footer-contact-section,
-.footer-tell-section {
+.address-list__contacts {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  line-height: 24px;
   text-decoration: none;
   transition-property: color, background-color;
   transition-duration: 250ms;
@@ -27,7 +27,7 @@
   }
 }
 
-.footer-address-section {
+.address-list__link {
   font-style: normal;
   text-decoration: none;
   line-height: 24px;
@@ -40,7 +40,7 @@
     color: var(--accent-color);
   }
 }
-.all-footer-menu {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
@@ -48,13 +48,13 @@
   margin-left: 70px;
 }
 .right-footer-title {
-    font-family: 'Roboto', sans-serif;
-    @include font(14px, 700, 1.14, 0.03em); 
-    color: var(--main-batton-address-color);
-    text-align: left;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    display: block;
+  font-family: 'Roboto', sans-serif;
+  @include font(14px, 700, 1.14, 0.03em);
+  color: var(--main-batton-address-color);
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
 }
 .right-footer-list {
   display: flex;
