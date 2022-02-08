@@ -44,11 +44,10 @@
   transition-duration: 250ms;
   transform: translateY(101%);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-text-decor:hover .portfolio-item-discription,
-.list-text-decor:focus .portfolio-item-discription {
-  transform: translateY(0);
+  .list-text-decor:hover &,
+  .list-text-decor:focus & {
+    transform: translateY(0);
+  }
 }
 
 .list-text-decor {

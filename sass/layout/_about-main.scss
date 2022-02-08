@@ -1,4 +1,7 @@
 /*------Секция рода занятий нашей организации--*/
+.section-main-material {
+  display: flex;
+}
 
 .section-name-main-material {
   font-weight: 700;
@@ -10,6 +13,7 @@
   text-transform: uppercase;
   padding: 0px;
 }
+
 .main-material-text {
   line-height: 1.71;
   font-style: Regular;
@@ -17,9 +21,7 @@
   padding: 0px;
   margin: 0px;
 }
-.section-main-material {
-  display: flex;
-}
+
 .list-about {
   width: 270px;
   &::before {
@@ -31,11 +33,11 @@
     background-position: center;
     margin-bottom: 30px;
   }
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
-.list-about .icon-antenna::before {
+.list-about:not(:last-child) {
+  margin-right: 30px;
+}
+.icon-antenna::before {
   background-image: url(/images/antenna.svg);
 }
 .icon-clock::before {
