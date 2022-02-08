@@ -23,11 +23,8 @@
   position: relative;
 }
 .about-img-text-section {
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  font-family: 'Roboto';
+  @include font(14px, 700, 1.14, 0.03em);
   text-align: center;
   text-transform: uppercase;
   position: absolute;

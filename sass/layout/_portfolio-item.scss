@@ -1,8 +1,5 @@
 .portfolio-name-content {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 700, 2, 0.06em);
   color: var(--portfolio-main-color);
   text-decoration: none;
   margin-bottom: 4px;

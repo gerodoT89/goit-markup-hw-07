@@ -13,9 +13,7 @@
   display: list-item;
   font-family: inherit;
   font-style: Medium;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font(16px,500, 1.62, 0.03);
   text-align: center;
   color: var(--portfolio-main-color);
   text-decoration: none;

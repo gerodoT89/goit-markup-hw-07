@@ -1,12 +1,9 @@
 .button-style {
   display: inline-block;
+  @include font(16px, 700, 1.87, 0.06em);
   background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
   border-radius: 4px;
   cursor: pointer;
-  letter-spacing: 0.06em;
   color: var(--main-batton-address-color);
   text-align: center;
   border: none;
@@ -17,8 +14,8 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,:focus {
+  &:hover,
+  :focus {
     background-color: #188ce8;
   }
 }
-

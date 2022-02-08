@@ -27,17 +27,14 @@
   margin-right: 0px;
 }
 .team-name-section {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(16px, 500, 1.18, 0.03em);
   text-align: center;
   color: var(--main-name-text-color);
   margin-bottom: 10px;
 }
 
 .proffesin-section {
-  font-size: 16px;
-  line-height: 1.18;
+  @include font(16px, 400, 1.18, 0.03em);
   text-align: center;
   color: var(--main-text-color);
 }

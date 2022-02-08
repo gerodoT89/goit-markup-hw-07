@@ -4,9 +4,7 @@
 }
 
 .section-name-main-material {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-name-text-color);
   margin-bottom: 10px;
@@ -27,7 +25,7 @@
   &::before {
     display: block;
     height: 120px;
-    content: "";
+    content: '';
     background-color: var(--background-text-button-color);
     background-repeat: no-repeat;
     background-position: center;
@@ -44,7 +42,7 @@
   background-image: url(/images/clock.svg);
 }
 .icon-grafik::before {
-  background-image: url(/images/diagram\ 1.svg);
+  background-image: url(/images/diagram1.svg);
 }
 .icon-cosmic::before {
   background-image: url(/images/astronaut.svg);

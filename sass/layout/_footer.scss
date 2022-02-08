@@ -48,15 +48,13 @@
   margin-left: 70px;
 }
 .right-footer-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--main-batton-address-color);
-  text-align: left;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  display: block;
+    font-family: 'Roboto', sans-serif;
+    @include font(14px, 700, 1.14, 0.03em); 
+    color: var(--main-batton-address-color);
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
 }
 .right-footer-list {
   display: flex;
