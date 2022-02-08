@@ -1,9 +1,9 @@
 /*------Секция рода занятий нашей организации--*/
-.section-main-material {
+.card-set {
   display: flex;
 }
 
-.section-name-main-material {
+.material__title {
   @include font(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-name-text-color);
@@ -12,7 +12,7 @@
   padding: 0px;
 }
 
-.main-material-text {
+.material__text {
   line-height: 1.71;
   font-style: Regular;
   color: var(--main-text-color);
@@ -20,7 +20,7 @@
   margin: 0px;
 }
 
-.list-about {
+.material__item {
   width: 270px;
   &::before {
     display: block;
@@ -31,10 +31,11 @@
     background-position: center;
     margin-bottom: 30px;
   }
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
 }
-.list-about:not(:last-child) {
-  margin-right: 30px;
-}
+
 .icon-antenna::before {
   background-image: url(/images/antenna.svg);
 }

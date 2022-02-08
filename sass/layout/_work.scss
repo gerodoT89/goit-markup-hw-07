@@ -1,28 +1,26 @@
-.img-occupation {
+.work-card {
   display: flex;
   max-width: 100%;
   height: auto;
+  flex-wrap: nowrap;
 }
-.img-section {
+.work-section {
   padding-top: 0px;
   padding-bottom: 94px;
 }
-.img-material-section {
+.work-card__item {
   display: block;
   margin-right: 30px;
 }
-.img-occupation .img-material-section:last-child {
+.work-card .work-card__item:last-child {
   margin-right: 0px;
 }
-.img-occupation {
-  flex-wrap: nowrap;
-}
 
-.about-item-wrap {
+.work__wrap {
   display: block;
   position: relative;
 }
-.about-img-text-section {
+.work__text {
   font-family: 'Roboto';
   @include font(14px, 700, 1.14, 0.03em);
   text-align: center;
