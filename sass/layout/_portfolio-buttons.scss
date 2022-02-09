@@ -1,19 +1,20 @@
-.button-list-item {
+//--- Оформление кнопок меню портфолио ---//
+.filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
   list-style: none;
 }
-.button-setting {
+.filter__item {
   display: list-item;
   margin-right: 8px;
   list-style: none;
 }
-.main-name-section {
+.filter__btn {
   display: list-item;
   font-family: inherit;
   font-style: Medium;
-  @include font(16px,500, 1.62, 0.03);
+  @include font(16px, 500, 1.62, 0.03);
   text-align: center;
   color: var(--portfolio-main-color);
   text-decoration: none;
@@ -33,6 +34,6 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
-.button-list-item .button-setting:last-child {
+.filter__item .filter-list:last-child {
   margin-right: 0px;
 }

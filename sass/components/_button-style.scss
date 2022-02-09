@@ -1,4 +1,6 @@
-.button-style {
+//----  Стиль кнопки ----//
+
+.button__style {
   display: inline-block;
   @include font(16px, 700, 1.87, 0.06em);
   background-color: var(--accent-color);

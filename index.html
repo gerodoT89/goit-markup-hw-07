@@ -64,7 +64,7 @@
       <section class="hero main-container">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button-style" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button__style" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-----Секция:Основной материал сайта-------->
@@ -381,31 +381,31 @@
           </div>
           <div class="right-footer-container">
             <strong class="right-footer-title">ПРИСОЕДИНЯЙТЕСЬ</strong>
-            <ul class="right-footer-list list">
-              <li class="right-footer-item">
-                <a href="" class="right-footer-link">
-                  <svg class="right-footer-icons" width="20" height="20">
+            <ul class="right-footer__list list">
+              <li class="right-footer__item">
+                <a href="" class="right-footer__link">
+                  <svg class="right-footer__icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="right-footer-item">
-                <a href="" class="right-footer-link">
-                  <svg class="right-footer-icons" width="20" height="20">
+              <li class="right-footer__item">
+                <a href="" class="right-footer__link">
+                  <svg class="right-footer__icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="right-footer-item">
-                <a href="" class="right-footer-link">
-                  <svg class="right-footer-icons" width="20" height="20">
+              <li class="right-footer__item">
+                <a href="" class="right-footer__link">
+                  <svg class="right-footer__icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-twiter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="right-footer-item">
-                <a href="" class="right-footer-link">
-                  <svg class="right-footer-icons" width="20" height="20">
+              <li class="right-footer__item">
+                <a href="" class="right-footer__link">
+                  <svg class="right-footer__icons" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -415,8 +415,8 @@
           <div class="footer-con-item">
             <strong class="right-footer-title">Подпишитесь на рассылку</strong>
             <form>
-              <input class="input-footer" name="email-footer" type="email" placeholder="E-mail" />
-              <button class="button-style btn-send" type="submit">
+              <input class="footer__input" name="email-footer" type="email" placeholder="E-mail" />
+              <button class="button__style btn-send" type="submit">
                 Подписаться
                 <svg class="icon-send-btn" width="24px" height="24px">
                   <use href="./images/modal.svg#icon-icon-send"></use>
@@ -429,49 +429,49 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
-          <svg class="close-icon-modal" width="11px">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg class="modal-close__icon" width="11px">
             <use href="./images/close.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="form" action="#">
-          <div class="form-field">
-            <label class="input-text name-margin" for="user-name">Имя</label>
-            <input type="text" class="form-input" name="user-name" required id="user-name" />
-            <svg class="modal-icon" width="12px" height="12px">
+          <div class="form__field">
+            <label class="form__label name-margin" for="user-name">Имя</label>
+            <input type="text" class="form__input" name="user-name" required id="user-name" />
+            <svg class="form__icon" width="12px" height="12px">
               <use href="./images/modal.svg#icon-man"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="input-text" for="user-fone">Телефон</label>
-            <input type="text" class="form-input" name="user-fone" required id="user-fone" />
-            <svg class="modal-icon" width="13px" height="13px">
+          <div class="form__field">
+            <label class="form__label" for="user-fone">Телефон</label>
+            <input type="text" class="form__input" name="user-fone" required id="user-fone" />
+            <svg class="form__icon" width="13px" height="13px">
               <use href="./images/modal.svg#icon-fone"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="input-text" for="user-mail">Почта</label>
-            <input type="text" class="form-input" name="user-mail" required id="user-mail" />
-            <svg class="modal-icon" width="15px" height="15px">
+          <div class="form__field">
+            <label class="form__label" for="user-mail">Почта</label>
+            <input type="text" class="form__input" name="user-mail" required id="user-mail" />
+            <svg class="form__icon" width="15px" height="15px">
               <use href="./images/modal.svg#icon-convert"></use>
             </svg>
           </div>
-          <div class="form-field">
-            <label class="input-text" for="user-text">Комментарий</label>
+          <div class="form__field">
+            <label class="form__label" for="user-text">Комментарий</label>
             <textarea
               name="user-text"
               id="user-text"
-              class="form-text"
+              class="form__text"
               placeholder="Введите текст"
             ></textarea>
           </div>
           <div class="conditions">
-            <label class="input-checkbox">
+            <label class="input__checkbox">
               <input class="checkbox" type="checkbox" name="check" />
-              <span class="checkbox-icon"></span>
+              <span class="checkbox__icon"></span>
               Соглашаюсь с рассылкой и принимаю&#160;<a
-                class="conditions-link"
+                class="conditions__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
@@ -479,7 +479,7 @@
               >
             </label>
           </div>
-          <button type="submit" class="form button-style">Отправить</button>
+          <button type="submit" class="form button__style">Отправить</button>
         </form>
       </div>
     </div>

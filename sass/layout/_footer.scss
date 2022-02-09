@@ -1,3 +1,4 @@
+// ------ Настройки секции футер --------//
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -56,17 +57,17 @@
   margin-bottom: 20px;
   display: block;
 }
-.right-footer-list {
+.right-footer__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.right-footer-item {
+.right-footer__item {
   justify-content: baseline;
   margin-right: 10px;
 }
-.right-footer-link {
+.right-footer__link {
   width: 44px;
   height: 44px;
   background-color: #44454e;
@@ -82,10 +83,10 @@
     background-color: var(--accent-color);
   }
 }
-.right-footer-item:last-child {
+.right-footer__item:last-child {
   margin-right: 0px;
 }
-.right-footer-icons {
+.right-footer__icons {
   fill: #ffffff;
   margin-top: 12px;
   cursor: pointer;

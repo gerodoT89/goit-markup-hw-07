@@ -1,3 +1,5 @@
+// -------Натсройки модального окна ------//
+
 .backdrop {
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -6,7 +8,11 @@
   height: 100vh;
   transition: opacity 500ms, visibility 500ms;
 }
-
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 .modal {
   position: absolute;
   padding: 40px;
@@ -18,7 +24,7 @@
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
 }
-.modal-close {
+.modal__close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -32,37 +38,33 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.close-icon-modal {
+.modal-close__icon {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     color: var(--accent-color);
   }
-  .modal-close:hover &,
-  .modal-close:focus & {
+  .modal__close:hover &,
+  .modal__close:focus & {
     fill: currentColor;
   }
 }
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-.modal-title {
+
+.modal__title {
   @include font(20px, 700, 1.15, 0.03);
   text-align: center;
   margin-bottom: 12px;
   color: var(--portfolio-main-color);
 }
-.form .button-style {
+.form .button__style {
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
 
-.form-field {
+.form__field {
   position: relative;
 }
-.input-text {
+.form__label {
   display: block;
   margin-bottom: 4px;
   margin-top: 10px;
@@ -74,7 +76,7 @@
 .name-margin {
   margin-top: 0px;
 }
-.form-input {
+.form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -82,14 +84,12 @@
   outline: none;
   padding: 11px 12px 11px 42px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  :focus,
-  + &.modal-icon:hover,
-  :focus {
+  &:hover + .form__icon,
+  &:focus + .form__icon {
     fill: var(--accent-color);
   }
 }
-.form-text {
+.form__text {
   display: block;
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -104,16 +104,17 @@
   resize: none;
   outline: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .form-input:hover &,
-  .form-input:focus & {
-    border-color: var(--accent-color);
-  }
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
 }
-
-.modal-icon {
+.form__input:hover,
+.form__text:hover,
+.form__input:focus,
+.form__text:focus {
+  border-color: var(--accent-color);
+}
+.form__icon {
   display: inline-block;
   top: 50%;
   left: 12px;
@@ -124,17 +125,17 @@
 .conditions {
   margin-bottom: 30px;
 }
-.conditions-link {
+.conditions__link {
   color: var(--accent-color);
 }
 
-.input-checkbox {
+.input__checkbox {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.checkbox-icon {
+.checkbox__icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -148,7 +149,7 @@
     border: solid 2px #2196f3;
   }
 }
-.checkbox:checked + .checkbox-icon {
+.checkbox:checked + .checkbox__icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-image: url(../images/chek_form.svg);
@@ -164,7 +165,7 @@
   margin-left: auto;
 }
 
-.input-footer {
+.footer__input {
   height: 50px;
   min-width: 358px;
   padding: 0 15px;
