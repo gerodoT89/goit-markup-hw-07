@@ -702,19 +702,19 @@ footer {
 }
 
 .icon-antenna::before {
-  background-image: url(/images/antenna.svg);
+  background-image: url(../../images/antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(/images/clock.svg);
+  background-image: url(../../images/clock.svg);
 }
 
 .icon-grafik::before {
-  background-image: url(/images/diagram1.svg);
+  background-image: url(../../images/diagram1.svg);
 }
 
 .icon-cosmic::before {
-  background-image: url(/images/astronaut.svg);
+  background-image: url(../../images/astronaut.svg);
 }
 
 .work-card {
